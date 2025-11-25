@@ -175,3 +175,13 @@ print(c)
 
 ## Result:
   Thus,the Python program using Pandas to join two DataFrames along rows (row-wise concatenation) and assign all data to a new DataFrame is created successfully.
+
+
+
+
+## REVIEW PAGE FOR MODULE
+
+
+<img width="1919" height="877" alt="image" src="https://github.com/user-attachments/assets/ab56f53f-e28a-4cfc-9e80-c5cc9c6150a5" />
+
+  
