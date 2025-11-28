@@ -1,9 +1,42 @@
-# NumPy Program: Column-wise Sorting of a 2D Array
 
-## 🎯 Aim
+
+## A) NumPy Program: Find Indices Where Elements in Array x are Greater Than or Equal to Corresponding Elements in Array y
+
+##  Aim
+To write a Python program using **NumPy** that finds the indices where elements in array `x` are greater than or equal to their corresponding elements in array `y`.
+
+##  Algorithm
+1. **Import NumPy**: Import the NumPy library.
+2. **Define Arrays**: Define two NumPy arrays, `x` and `y`, with the same shape (i.e., same number of elements).
+3. **Use Boolean Indexing**: 
+   - `x > y` gives a boolean array where elements of `x` are greater than `y`.
+   - `x == y` gives a boolean array where elements of `x` are equal to `y`.
+4. **Find Indices**: Use `np.where()` to get the indices where the conditions `x >= y` are satisfied.
+5. **Print Indices**: Print the indices where the condition holds true.
+
+##  Program:
+```
+import numpy as np
+X=np.array(eval(input()))
+Y=np.array(eval(input()))
+greater=np.where(X>Y)
+print(greater)
+equal=np.where(X==Y)
+print(equal)
+```
+## Output:
+
+<img width="842" height="371" alt="442578541-8584f72e-6aa3-4d03-94de-7be4657f6b5c" src="https://github.com/user-attachments/assets/a018ff0e-0a7c-4614-96e9-69fc7d82e28d" />
+
+## Result:
+   Thus,the Python program using NumPy that finds the indices where elements in array x are greater than or equal to their corresponding elements in array y is created successfully.
+
+#  B) NumPy Program: Column-wise Sorting of a 2D Array
+
+## Aim
 To write a **NumPy** program that sorts the elements in each column of a given 2D array in ascending order.
 
-## 🧠 Algorithm
+##  Algorithm
 
 1. **Import NumPy**: Start by importing the NumPy library.
 2. **Get Input**: Accept a 2D NumPy array from the user.
@@ -11,7 +44,7 @@ To write a **NumPy** program that sorts the elements in each column of a given 2
 4. **Store Result**: Store the sorted result in a new array.
 5. **Display Output**: Print the original array and the column-wise sorted array.
 
-## 🧾 Program:
+##  Program:
 ```
 import numpy as np
 a=np.array(eval(input()))
@@ -29,51 +62,19 @@ print(b)
   Thus,the NumPy program that sorts the elements in each column of a given 2D array in ascending order is created successfully.
 
 
-# # NumPy Program: Find Indices Where Elements in Array x are Greater Than or Equal to Corresponding Elements in Array y
+# C) NumPy Program: Replace the Second Column in a 2D Array
 
-## 🎯 Aim
-To write a Python program using **NumPy** that finds the indices where elements in array `x` are greater than or equal to their corresponding elements in array `y`.
-
-## 🧠 Algorithm
-1. **Import NumPy**: Import the NumPy library.
-2. **Define Arrays**: Define two NumPy arrays, `x` and `y`, with the same shape (i.e., same number of elements).
-3. **Use Boolean Indexing**: 
-   - `x > y` gives a boolean array where elements of `x` are greater than `y`.
-   - `x == y` gives a boolean array where elements of `x` are equal to `y`.
-4. **Find Indices**: Use `np.where()` to get the indices where the conditions `x >= y` are satisfied.
-5. **Print Indices**: Print the indices where the condition holds true.
-
-## 🧾 Program:
-```
-import numpy as np
-X=np.array(eval(input()))
-Y=np.array(eval(input()))
-greater=np.where(X>Y)
-print(greater)
-equal=np.where(X==Y)
-print(equal)
-```
-## Output:
-
-<img width="842" height="371" alt="442578541-8584f72e-6aa3-4d03-94de-7be4657f6b5c" src="https://github.com/user-attachments/assets/a018ff0e-0a7c-4614-96e9-69fc7d82e28d" />
-
-## Result:
-   Thus,the Python program using NumPy that finds the indices where elements in array x are greater than or equal to their corresponding elements in array y is created successfully.
-
-
-# NumPy Program: Replace the Second Column in a 2D Array
-
-## 🎯 Aim
+##  Aim
 To write a **NumPy** program that deletes the second column from a given 2D array and inserts a new column at the same position.
 
-## 🧠 Algorithm
+##  Algorithm
 1. **Import NumPy**: Start by importing the NumPy library.
 2. **Get Input**: Get a 2D NumPy array and a new column (as another array) from the user.
 3. **Delete Column**: Use `np.delete()` to remove the second column (index 1) from the original array.
 4. **Insert Column**: Use `np.insert()` to insert the new column at the second column's original position.
 5. **Display Result**: Print the updated array with the replaced column.
 
-## 🧾 Program:
+##  Program:
 ```
 import numpy as np
 a=np.array(eval(input()))
@@ -95,15 +96,15 @@ print(d)
   Thus,the NumPy program that deletes the second column from a given 2D array and inserts a new column at the same position is created successfully.
 
 
-# Pandas Program: Create and Display a DataFrame with Custom Index Labels
+# D) Pandas Program: Create and Display a DataFrame with Custom Index Labels
 
-## 🎯 Aim
+##  Aim
 
 To create and display a **DataFrame** using the **Pandas** library in Python from a given dictionary, and apply specific index labels to the rows.
 
 ---
 
-## 🧠 Algorithm
+##  Algorithm
 
 1. **Import Libraries**: Import the required libraries – `pandas` and `numpy`.
 2. **Create Dictionary**: Define a dictionary `exam_data` with keys: `'name'`, `'score'`, `'attempts'`, and `'qualify'`.
@@ -137,15 +138,15 @@ print(df)
   Thus,the Python program create and display a DataFrame using the Pandas library in Python from a given dictionary, and apply specific index labels to the rows is created successfully.
 
 
-# 🧪 Pandas Program: Join Two DataFrames Along Rows
+# E) Pandas Program: Join Two DataFrames Along Rows
 
-## 🎯 AIM
+##  AIM
 
 To write a Python program using Pandas to **join two DataFrames along rows** (row-wise concatenation) and assign all data to a new DataFrame.
 
 ---
 
-## 🧠 ALGORITHM
+##  ALGORITHM
 
 1. **Import Libraries**: Import the `pandas` library.
 2. **Create First DataFrame**: Use a dictionary to create `student_data1`.
@@ -155,7 +156,7 @@ To write a Python program using Pandas to **join two DataFrames along rows** (ro
 
 ---
 
-## 💻 Program:
+##  Program:
 ```
 import pandas as pd
 a=pd.DataFrame(eval(input()))
@@ -179,9 +180,3 @@ print(c)
 
 
 
-## REVIEW PAGE FOR MODULE
-
-
-<img width="1919" height="877" alt="image" src="https://github.com/user-attachments/assets/ab56f53f-e28a-4cfc-9e80-c5cc9c6150a5" />
-
-  
